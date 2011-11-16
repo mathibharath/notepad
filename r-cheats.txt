@@ -69,6 +69,17 @@ sample(1 : 30)
 # machine specific info like maximum integer
 .Machine$integer.max
 
+# For using optional packages:
+# if package is missing use _R_CHECK_FORCE_SUGGESTS_=false
+# In code you can do something like
+#
+# pkg <- "somePkg" 
+# pkgAvail <- require(pkg, character.only = TRUE) 
+# if (pkgAvail) 
+#    ... 
+# else 
+#    ... 
+
 Creating binary packages on windows:
 ====================================
  * Install latest version of R (choosing non-default install location is OK)
