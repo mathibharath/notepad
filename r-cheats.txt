@@ -80,6 +80,9 @@ sample(1 : 30)
 # else 
 #    ... 
 
+# to quickly test out what a color looks like:
+image(matrix(1), col= "grey")
+
 Creating binary packages on windows:
 ====================================
  * Install latest version of R (choosing non-default install location is OK)
